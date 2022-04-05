@@ -1,4 +1,4 @@
-﻿int quadratoeArray(int[] array)
+﻿ /*int quadratoeArray(int[] array)
 {
     int[] copiarrey = (int[])array.Clone();
 
@@ -16,17 +16,19 @@ double Quadrato(int numero)
     return risultato;
 
 }
-
+ */
 
 int sommaElementiArrey(int[] arrey)
 {
- 
+  
+
     int[] copiarrey = (int[])arrey.Clone();
     int somma=0;
     for (int i = 0; i < copiarrey.Length; i++)
     {
        somma += copiarrey[i];
     }
+    
     return somma;
 }
 
@@ -57,5 +59,6 @@ int[] arrey = new int[] { 2, 6, 7, 5, 3, 9 };
 
 Console.WriteLine("l'arrey è: ");
 StampaArrayInteri(arrey);
-Console.WriteLine("la somma è: ");
-sommaElementiArrey(arrey);
+   int s = sommaElementiArrey(arrey);
+Console.WriteLine("la somma è: "+s);
+
